@@ -19,8 +19,8 @@ use Flarum\Settings\SettingsRepositoryInterface;
 return [
     (new Extend\Frontend('forum'))
         ->js(__DIR__.'/js/dist/forum.js')
-        ->css(__DIR__.'/resources/less/forum.less')
-        ->content(AddStatisticsData::class),
+        ->css(__DIR__.'/resources/less/forum.less'),
+        // ->content(AddStatisticsData::class),
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/resources/less/admin.less'),
