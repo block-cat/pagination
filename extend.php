@@ -24,15 +24,8 @@ return [
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/resources/less/admin.less'),
-    // (new Extend\ApiController(AbstractSerializeController::class))
-    //     ->setLimit(0, function(AbstractSerializeController $controller) {
-    //         $settings = resolve(SettingsRepositoryInterface::class);
-    //         // getting article limit from settings
-    //         $limit = $settings->get('block-cat.article_per_page');
-
-    //         // setting new limit for Discussion page
-    //         $controller->setLimit($limit);
-    //     }),
+    (new Extend\ApiController(AbstractSerializeController::class))
+        ->setLimit(resolve(SettingsRepositoryInterface::class)->get('block-cat.article_per_page')),
     (new Extend\Settings())
         -> serializeToForum('block-cat.articlePerPage', 'block-cat.article_per_page')
         -> serializeToForum('block-cat.paginationPosition', 'block-cat.pagination_position'),
