@@ -2,12 +2,12 @@ block-cat-pagination:
   admin:
     settings:
       pagination:
+        position_label: Poziția paginării
+        position_help_text: Selectați poziția paginării pe pagina principală
+        articlePage_label: Articole pe pagină
+        articlePage_help_text: Selectați numărul de articole pe o singură pagină
         position:
           none: Implicit
           above: Deasupra
           under: Dedesupt
           both: Ambele
-        position_label: Poziția paginării
-        position_help_text: Selectați poziția paginării pe pagina principală
-        articlePage_label: Articole pe pagină
-        articlePage_help_text: Selectați numărul de articole pe o singură pagină
