@@ -3,11 +3,11 @@ block-cat-pagination:
     settings:
       pagination:
         position:
-          none: "Default"
-          above: "Above"
-          under: "Under"
-          both: "Both"
-        position_label: "Pagination position"
-        position_help_text: "Select pagination position"
-        articlePage_label: "Articles per page"
-        articlePage_help_text: "Select number of articles per page"
+          none: Default
+          above: Above
+          under: Under
+          both: Both
+        position_label: Pagination position
+        position_help_text: Select pagination position
+        articlePage_label: Articles per page
+        articlePage_help_text: Select number of articles per page
