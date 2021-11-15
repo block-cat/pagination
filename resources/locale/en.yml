@@ -1,13 +1,13 @@
-# block-cat-pagination:
-#   admin:
-#     settings:
-#       pagination:
-#         position_label: Pagination position
-#         position_help_text: Select pagination position
-#         articlePage_label: Articles per page
-#         articlePage_help_text: Select number of articles per page
-#         position:
-#           none: Default
-#           above: Above
-#           under: Under
-#           both: Both
+block-cat-pagination:
+  admin:
+    settings:
+      pagination:
+        position_label: "Pagination position"
+        position_help_text: "Select pagination position"
+        articlePage_label: "Articles per page"
+        articlePage_help_text: "Select number of articles per page"
+        position:
+          none: "Default"
+          above: "Above"
+          under: "Under"
+          both: "Both"

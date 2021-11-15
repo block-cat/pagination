@@ -6,10 +6,10 @@ app.initializers.add('block-cat/pagination', () => {
   app.extensionData.for('block-cat-pagination')
     .registerPage(PaginationSettings);
   
-  extend(Store.prototype, 'pushPayload', function() {
-    console.log(arguments);
-  });
-  extend(Store.prototype, 'pushObject', function() {
-    console.log(arguments);
-  });
+  // extend(Store.prototype, 'pushPayload', function() {
+  //   console.log(arguments);
+  // });
+  // extend(Store.prototype, 'pushObject', function() {
+  //   console.log(arguments);
+  // });
 });
