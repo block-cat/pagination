@@ -1,0 +1,30 @@
+{
+  "name": "block-cat/pagination",
+  "description": "Add pagination for Flarum forum",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.0"
+  },
+  "authors": [{
+    "name": "BlockCat"
+  }],
+  "autoload": {
+    "psr-4": {
+      "BlockCat\\Pagination\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "BkC Pagination",
+      "icon": {
+        "name": "fas fa-dizzy",
+        "backgroundColor": "#083",
+        "color": "#fff"
+      }
+    }
+  }
+}
