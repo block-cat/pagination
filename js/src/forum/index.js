@@ -7,6 +7,7 @@ import Placeholder from 'flarum/common/components/Placeholder';
 import Button from 'flarum/common/components/Button';
 import Stream from 'flarum/common/utils/Stream';
 import DiscussionComposer from 'flarum/components/DiscussionComposer';
+import IndexPage from 'flarum/components/IndexPage';
 import DiscussionControls from 'flarum/utils/DiscussionControls';
 
 app.initializers.add('block-cat/pagination', () => {
@@ -299,7 +300,8 @@ app.initializers.add('block-cat/pagination', () => {
         let buttons;
         let toolbar;
 
-        // console.log(state.ctrl.pageList());
+        // console.log(app.current.matches(IndexPage));
+        if (!app.current.matches(IndexPage)) return;
         
         // for normal desktop
         state.ctrl.pageList().map(function (page) {
